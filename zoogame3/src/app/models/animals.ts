@@ -3,5 +3,5 @@ export interface Animal {
     sound: string;
     image: string;
     stamina: number;
-    stamindaDecay: number;
+    staminaDecay: number;
 }

@@ -1,1 +1,19 @@
-<p>zookeeper works!</p>
+<h1>Zoo Animals</h1>
+<div *ngFor='let animal of animalList'>
+    <app-animal
+        [name]='animal.name'
+        [sound]='animal.sound'
+        [image]='animal.image'
+        [stamina]='animal.stamina'
+        [staminaDecay]='animal.staminaDecay'
+    ></app-animal>
+</div>
+<h1>Zoo Chores</h1>
+<div *ngFor='let chore of choreList'>
+    <app-chore
+        [name]='chore.name'
+        [image]="chore.image"
+        [completionTime]='chore.completionTime'
+        [complete]='chore.complete'
+    ></app-chore>
+</div>
